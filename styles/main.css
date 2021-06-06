@@ -1,0 +1,99 @@
+
+.switch-main{
+    width: 222px;
+height: 100px;
+    margin: auto;
+    padding-top: 30px;
+}
+.switch-main__switch-text, .switch-main__switch{
+    float: left;
+}
+.switch-main__switch-text{
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 7px;
+}
+.accordion-main__accordion{
+    width: 80%;
+    background-color: #ada8a8;
+    margin: auto auto 10px;
+    border-radius: 5px;
+}
+.accordion-main__btn{
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 2px;
+    padding-left: 20px;
+    transition: 0.7s;
+
+}
+
+.accordion-main__text{
+    padding: 15px;
+    font-size: 16px;
+    border-top: black solid 2px;
+    display: none;
+
+}
+
+.accordion-main__accordion.active .accordion-main__text{
+    display: block;
+
+}
+.accordion-main__accordion.active .accordion-main__btn{
+    display: block;
+    background-color: #d2cdcd;
+
+}
+.accordion-main__accordion :hover{
+    background-color: #d2cdcd;
+    border-radius: 5px;
+}
+.accordion-main__text:hover{
+    background-color: #ada8a8;
+
+}
+/*******************/
+.switch-main__switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    border-radius: 20px;
+    background-color: #2196F3;
+    cursor: pointer;
+}
+
+.switch-main__switch input {
+    display:none;
+}
+
+
+.switch-main__slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+     transition: .4s;
+}
+
+input:checked + .switch-main__slider:before {
+   -webkit-transform: translateX(26px);
+}
+
+.switch-main__slider.round {
+    border-radius: 34px;
+}
+
+.switch-main__slider.round:before {
+    border-radius: 50%;
+}
